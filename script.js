@@ -1,11 +1,15 @@
 const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     
-    direction: 'vertical',
     loop: true,
   
     
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   
     
@@ -15,7 +19,4 @@ const swiper = new Swiper('.swiper', {
     },
   
     
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   });
